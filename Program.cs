@@ -12,6 +12,7 @@ namespace HelloWorld
             game.Run();
             //Wait before closing
             Console.ReadKey();
+
         }
     }
 }
