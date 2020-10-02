@@ -4,19 +4,35 @@ using System.Text;
 
 namespace HelloWorld
 {
-    public class Player 
+    class Player : Character
     {
         private int _yen = 47;
         public int _potion = 5;
         public int _weaponValue = 1;
         private Item[] _inventory;
 
-        public Player()
+        public Player() : base()
         {
             _yen = 66;
             _inventory = new Item[3];
         }
+        public Item[] GetInventory()
+        {
+            return _inventory;
+        }
+        public void AddItemToInventory(Item item, int index)
+        {
+            _inventory[index] = item;
+        }
+        public bool Contains(int itemIndex)
+        {
+            if (itemIndex > 0 && itemIndex < _inventory.Length)
+            {
+                return true;
+            }
+            return false;
 
+        }
         private void Buy(Item item, int inventoryIndex)
         {
             // checks if player has enough
@@ -29,6 +45,8 @@ namespace HelloWorld
                
 
             }
+            
+            
         }
 
     }

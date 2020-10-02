@@ -123,7 +123,7 @@ namespace HelloWorld
             {
                 Console.WriteLine("You Choose to go left and stumble across a giant base with auto turrets, giant sun flowers with a mysterious glow grasp you attention. " +
                     "it shoots giant sun flower seeds at you ");
-                Console.WriteLine(" You quicky jump to the side but as you do the flowers roots come through the ground and pull you down suffocating you.");
+                Console.WriteLine(" You quickly jump to the side but as you do the flowers roots come through the ground and pull you down suffocating you.");
                 _gameOver = true;
             }
             else if (input == '2')
@@ -131,7 +131,7 @@ namespace HelloWorld
                 Console.WriteLine("You continue your journey and head towards Dejungle");
                 Console.ReadKey();
             }
-            Console.WriteLine("Along the trip the area you are exploring seems to start getting darker until a goant frog with 3 heads and glowing red eyes. You realize it is the fabled Mega Hypototoad.");
+            Console.WriteLine("Along the trip the area you are exploring seems to start getting darker until a giant frog with 3 heads and glowing red eyes. You realize it is the fabled Mega Hypototoad.");
             int enemyhealth = 75;
             _gameOver = StartBattle(ref _playerHealth, ref enemyhealth);
             Console.WriteLine("You have gotten 200 yen would you like to visit the shop");
